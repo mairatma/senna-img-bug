@@ -1,0 +1,16 @@
+{
+  "name": "senna-img-bug",
+  "version": "0.0.0",
+  "description": "Reproduces a weird bug with senna and images",
+  "license": "BSD",
+  "repository": "mairatma/senna-img-bug",
+  "scripts": {
+    "start": "http-server"
+  },
+  "dependencies": {
+    "senna": "^1.0.4"
+  },
+  "devDependencies": {
+    "http-server": "^0.9.0"
+  }
+}

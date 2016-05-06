@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Senna - Home</title>
+  <!-- Senna -->
+  <script src="../../node_modules/senna/build/globals/senna.js"></script>
+</head>
+<body>
+  <a href="/demos/senna">Home</a>
+  <a href="/demos/senna/pages/page1.html">Page 1</a>
+  <a href="/demos/senna/pages/page2.html">Page 2</a>
+  <!-- Content surface -->
+  <div id="content">
+    <div id="content-default">
+      Home content.
+			<img width="512" height="256" src="img/img1.jpg">
+    </div>
+  </div>
+  <!-- End of content surface -->
+  <script>
+    var app = new senna.App();
+    app.addSurfaces('content');
+    app.addRoutes([
+      new senna.Route('/demos/senna', senna.HtmlScreen),
+      new senna.Route('/demos/senna/pages/page1.html', senna.HtmlScreen),
+      new senna.Route('/demos/senna/pages/page2.html', senna.HtmlScreen)
+    ]);
+		app.dispatch();
+  </script>
+</body>
+</html>
