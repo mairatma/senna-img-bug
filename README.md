@@ -18,4 +18,7 @@ Reproduces a weird bug with senna and images.
   npm run server
   ```
 
-4. Open the example using the url the previous command indicated (something like **localhost:8080**).
+4. Open the example using the url the previous command indicated (something
+  like **localhost:8080**). The example accessible via `<url>/` works
+  as expected, while `<url>/demos/senna/` doesn't. Just load the example and
+  you'll see that the image fails to be fetched.
